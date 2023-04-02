@@ -1,0 +1,403 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::before,
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+a,
+p {
+    text-decoration: none;
+    /* font-family: ; */
+    color: #0D0B0D;
+    /*main color 검정*/
+    /*   color: #D9C9BA; sub color 베이지*/
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+font {
+    font-family: 'Outfit', sans-serif;
+    /*main font*/
+    font-family: 'Cormorant Garamond', serif;
+    /*sub font*/
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    /*etc font*/
+    font-family: 'Allura', cursive;
+    /*필기체*/
+}
+
+/* wrap, page custom */
+#wrap {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0, 0.5);
+    background-image: url("https://images.unsplash.com/photo-1594734415578-00fc9540929b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+    background-size: 100% 100%;
+    /*   background: pink; */
+}
+
+#page {
+    width: 95%;
+    height: 95%;
+    margin-top: 1%;
+    position: relative;
+    /*   background: lightsalmon; */
+}
+
+/******************************************************/
+/* page1Wrap */
+#page1Wrap {
+    width: 100%;
+    height: 750px;
+    border-bottom: solid 1px #0D0B0D;
+    /*   background: lightgreen; */
+}
+
+/* headr */
+header {
+    width: 100%;
+    height: 70px;
+    border: solid 1px #0D0B0D;
+}
+
+header .logo {
+    float: left;
+    width: 7%;
+    height: 100%;
+    background: #0D0B0D;
+    text-align: center;
+}
+
+header .logo p {
+    color: #F2F2F2;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+header .logo span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+header .menu {
+    float: left;
+    width: 80%;
+    height: 100%;
+    border-right: solid 1px #0D0B0D;
+    display: flex;
+    align-items: center;
+}
+
+header .menu ul {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    /*   background: green; */
+}
+
+header .menu ul li {
+    float: left;
+    width: 25%;
+}
+header .menu ul li a{
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    transition: 0.15s linear;
+}
+header .menu ul li:hover a{
+    font-size: 20px;
+    font-family: 'Allura', cursive;
+    color: #BF9B6F;
+}
+
+header .link {
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+
+header .link p:first-child {
+    float: left;
+    width: 50%;
+    height: 50%;
+    font-family: 'Outfit', sans-serif;
+    /*title font*/
+    font-size: 11px;
+    margin-top: 12.5%;
+    margin-left: 10%;
+}
+
+header .link p:last-child {
+    float: right;
+    width: 15%;
+    height: 50%;
+    font-size: 25px;
+    margin-top: 10%;
+    margin-right: -20%;
+}
+
+.p1Con1 {
+    width: 100%;
+    height: 50%;
+    /*   background: green; */
+}
+
+.p1Con1 p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 90px;
+    font-weight: 400;
+}
+
+.p1Con1 p span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px;
+    font-style: italic;
+}
+
+.p1Con1 p:first-child {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.p1Con1 p:last-child {}
+
+.p1Con2 {
+    width: 100%;
+    height: 20%;
+    /*   background: darkgreen; */
+}
+
+.p1Con2 a {
+    float: left;
+    width: 140px;
+    height: 60px;
+    background: #0D0B0D;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 45%;
+}
+
+.p1Con2 a p {
+    color: #F2F2F2;
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    padding-left: 5%;
+}
+
+.p1Con2 a span {
+    color: #F2F2F2;
+    font-size: 25px;
+    padding-left: 12%;
+}
+
+.p1Con2 p:nth-child(2) {
+    float: right;
+    padding-top: 15px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+}
+
+/******************************************************/
+/* page2Wrap */
+#page2Wrap {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /*   background: pink; */
+}
+
+/* 그림있는 왼쪽 면 */
+.p2Left {
+    width: 45%;
+    height: 93%;
+    overflow: hidden;
+    /*   background: green; */
+}
+
+/* img */
+.imgList {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /*   display: flex;
+    justify-content: center; */
+}
+
+.imgList img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+.imgList img:first-child {
+    /* display: block; */
+    opacity: 1;
+}
+
+/* 그림 설명인 오른쪽 편 */
+.p2Right {
+    width: 55%;
+    height: 93%;
+    overflow: hidden;
+    /*   background: greenyellow; */
+}
+
+.imgConList {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-left: 5%;
+    /*   background: darkgreen; */
+}
+
+.imgConSlide {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+}
+
+.imgConSlide:first-child {
+    opacity: 1;
+}
+
+.imgConSlide .title {
+    width: 95%;
+    height: 35%;
+    text-align: left;
+    /*   background: red; */
+}
+
+.imgConSlide .title p:first-child {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 100px;
+    font-style: italic;
+
+}
+
+.imgConSlide .title p:last-child {
+    font-family: 'Outfit', sans-serif;
+    font-size: 100px;
+}
+
+.imgConSlide .article {
+    width: 95%;
+    height: 55%;
+    /*   background: pink; */
+}
+
+.imgConSlide .article p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    display: inline-block;
+    text-align: left
+}
+
+.imgConSlide .article span {
+    float: right;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    padding-top: 2.5%;
+    line-height: 25px;
+    display: inline-block;
+    /*   padding-left: 12.5%; */
+}
+
+.imgConSlide footer {
+    width: 95%;
+    height: 9.5%;
+    /*   background: red; */
+}
+
+.imgConSlide footer .leftBtn {
+    float: left;
+    width: 30%;
+    height: 100%;
+    /*   background: lime; */
+}
+
+.imgConSlide footer .leftBtn p {
+    width: 100%;
+    height: 100%;
+    border: solid 1px #0D0B0D;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Allura', cursive;
+    font-size: 35px;
+}
+
+.imgConSlide footer .leftBtn p a {}
+
+.imgConSlide footer .leftBtn p span {
+    display: block;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.imgConSlide footer .rightBtn {
+    float: right;
+    width: 68%;
+    height: 100%;
+    /*   background: limegreen; */
+}
+
+.imgConSlide footer .rightBtn a {
+    width: 100%;
+    height: 100%;
+    background: #0D0B0D;
+    display: flex;
+    /*   justify-content: center; */
+    align-items: center;
+    flex-direction: row;
+}
+
+.imgConSlide footer .rightBtn a p {
+    width: 50%;
+    height: 50%;
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 20px;
+    color: #F2F2F2;
+    text-align: left;
+    padding-left: 3%;
+}
+
+.imgConSlide footer .rightBtn a span {
+    width: 10%;
+    height: 50%;
+    font-size: 25px;
+    color: #F2F2F2;
+    padding-left: 35%;
+}
